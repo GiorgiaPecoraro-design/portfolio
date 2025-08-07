@@ -12,6 +12,15 @@ a{
     color: #1a1a1a;
 }
 
+button{
+    padding: 8px;
+    background-color: #A8B5A2;
+    color: #DADADA;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
 .header{
     background-color: #F4F1EB;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
@@ -122,3 +131,37 @@ max-height: 240px;
         display: none;
     }
 }
+
+.hero {
+  display: grid;
+  position: relative;
+}
+
+.hero-img{
+    position: relative;
+    text-align: center;
+    max-height: 452px;
+    width: 100%;
+}
+
+.hero-text{
+  position: absolute;
+  padding: 20px;
+  color: #DADADA;
+}
+   
+.badge{
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #DADADA; 
+}
+     
+/* SE C'è BUTTON SOPRA TUTTI I BOTTONI SARANNO COSI?
+.btn-hero{
+    padding: 8px;
+    background-color: #A8B5A2;
+    color: #DADADA;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}*/
