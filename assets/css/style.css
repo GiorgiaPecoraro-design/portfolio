@@ -3,7 +3,9 @@
     );
 
 body{
-    margin: 0;
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family:'Inter', sans-serif;
     background-color: #F4F1EB;
 }
@@ -115,26 +117,6 @@ max-height: 240px;
   top: 0;
 }
 
-@media (min-width: 48em){ /* Mobile responsive*/
-    .header li{
-        float: left;
-    }
-
-    .header li a {
-        padding: 20px 30px;
-    }
-
-    .header .menu{
-        clear: none;
-        float: right;
-        max-height: 0;
-    }
-
-    .header .menu-icon{
-        display: none;
-    }
-}
-
 .hero {
   display: grid;
   position: relative;
@@ -167,6 +149,20 @@ max-height: 240px;
   margin-bottom: 20px;
   color: #DADADA; 
 }
+
+.project-card{
+    border:10px;/*perchè non si vedono i bordi?*/
+    border-color: #A8B5A2;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
      
 /* SE C'è BUTTON SOPRA TUTTI I BOTTONI SARANNO COSI?
 .btn-hero{
@@ -177,3 +173,23 @@ max-height: 240px;
     border: none;
     border-radius: 8px;
 }*/
+
+@media (min-width: 48em){ /* Mobile responsive*/
+    .header li{
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: 0;
+    }
+
+    .header .menu-icon{
+        display: none;
+    }
+}
