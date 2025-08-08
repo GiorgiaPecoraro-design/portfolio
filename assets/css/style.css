@@ -16,12 +16,15 @@ button{
     padding: 8px;
     background-color: #A8B5A2;
     color: #DADADA;
-    font-weight: bold;
+    /*font-weight: bold;*/
     border: none;
     border-radius: 8px;
 }
 
 .header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     background-color: #F4F1EB;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -112,7 +115,7 @@ max-height: 240px;
   top: 0;
 }
 
-@media (min-width: 48em){
+@media (min-width: 48em){ /* Mobile responsive*/
     .header li{
         float: left;
     }
@@ -135,23 +138,32 @@ max-height: 240px;
 .hero {
   display: grid;
   position: relative;
+  place-items: center;
+  height: 500px;
+  overflow: hidden;
 }
 
 .hero-img{
-    position: relative;
-    text-align: center;
-    max-height: 452px;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 0;
 }
 
 .hero-text{
-  position: absolute;
-  padding: 20px;
+  grid-area: 1 / 1 / 2 / 2;
+  z-index: 1;
+  padding: 8px;
   color: #DADADA;
+  text-align: center;
+  max-width: 90%;
+  background-color: rgba(0,0,0,0.5); 
 }
-   
+
 .badge{
-  padding: 20px;
+  display: inline-block;
+  padding: 8%;
   margin-bottom: 20px;
   color: #DADADA; 
 }
