@@ -21,7 +21,6 @@ button{
     /*font-weight: bold;*/
     border: none;
     border-radius: 8px;
-
 }
 
 .header{
@@ -152,12 +151,12 @@ max-height: 240px;
 }
 
 .project-card{
-    border:10px;/*perchè non si vedono i bordi?*/
-    border-color: #A8B5A2;
-    border-radius: 8px;
-    padding: 16px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+  border: 1px solid;
+  border-color: #A8B5A2;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
@@ -170,11 +169,13 @@ max-height: 240px;
     max-height: 160px;
 }
 
+.project-card:hover {
+  transform: scale(1.05); /* ingrandisce leggermente al passaggio del mouse */
 .skill{
     display: flex; 
     flex-direction: column; /* icona+titolo in alto, paragrafo sotto */                  
 }
-
+}
 .skill-header {
     display: flex;
     align-items: center; /* centra verticalmente icona e titolo */
