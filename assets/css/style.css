@@ -163,16 +163,22 @@ max-height: 240px;
   transition: transform 0.3s ease;
 }
 
+.img-card-project{
+    max-width:160px;
+    max-height: 160px;
+}
+
+.skill{
+    display: flex; 
+    flex-direction: column; /* icona+titolo in alto, paragrafo sotto */                  
+}
+
+.skill-header {
+    display: flex;
+    align-items: center; /* centra verticalmente icona e titolo */
+    gap: 8px; /* spazio orizzontale tra icona e titolo */
+}
      
-/* SE C'è BUTTON SOPRA TUTTI I BOTTONI SARANNO COSI?
-.btn-hero{
-    padding: 8px;
-    background-color: #A8B5A2;
-    color: #DADADA;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-}*/
 
 @media (min-width: 48em){ /* Mobile responsive*/
     .header li{
