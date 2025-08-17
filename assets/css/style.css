@@ -33,6 +33,7 @@ button{
     position: fixed;
     width: 100%;
     z-index: 1;
+    
 }
 
 .header ul {
@@ -235,7 +236,7 @@ max-height: 240px;
 
 
 
-@media (min-width: 48em){ /* Mobile responsive*/
+/* @media (min-width: 48em){ /* Mobile responsive
     .header li{
         float: left;
     }
@@ -253,4 +254,4 @@ max-height: 240px;
     .header .menu-icon{
         display: none;
     }
-}
+}*/
