@@ -25,8 +25,8 @@ button{
 
 .header{
     display: flex;
-    justify-content:space-between;
-    align-items: center;
+    justify-content: space-between;
+    align-items:flex-start;
     background-color: #F4F1EB;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -40,6 +40,7 @@ button{
     list-style-type: none; 
     overflow: hidden;
     background-color: #F4F1EB;
+    position: absolute;
 }
 
 .header ul a{
@@ -177,18 +178,59 @@ max-height: 240px;
 }
 }
 
+.soft-skills{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
 .skill{
     display: flex;
     flex-direction: column;
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
 .skill-header {
     display: flex;
     align-items: center; /* centra verticalmente icona e titolo */
     gap: 8px; /* spazio orizzontale tra icona e titolo */
 }
-     
+   
+.footer{
+    background-color: #F4F1EB;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .1);
+    padding:20px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.social-icons a {
+  margin-left: 12px;
+}
+
+.footer-links {
+  list-style-type: none;
+  display: block;
+  padding: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+ 
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 48em){ /* Mobile responsive*/
     .header li{
