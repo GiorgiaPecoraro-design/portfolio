@@ -22,6 +22,7 @@ button{
     /*font-weight: bold;*/
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .header{
@@ -181,11 +182,11 @@ max-height: 240px;
 }
 }
 
-.project-card-button{
+/* .project-card-button{
   display: inline-block;  /* non più full width */
-  width: auto;            /* lascia che la larghezza dipenda dal contenuto */
-  text-align: center;     /* mantiene il testo centrato dentro il bottone */ 
-}
+  /* width: auto;            lascia che la larghezza dipenda dal contenuto */
+  /* text-align: center;     /* mantiene il testo centrato dentro il bottone  */
+
 
 .project-card a{
     background-color:#A8B5A2;
@@ -227,6 +228,31 @@ max-height: 240px;
     gap: 8px; /* spazio orizzontale tra icona e titolo */
 }
 
+form{
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea{
+    padding: 8px;
+    border: 1px solid;
+    color: #A8B5A2;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.btn-form{
+    display: inline-block; 
+    width: auto;            
+    text-align: center;
+}
 
 .footer{
     background-color: #F4F1EB;
