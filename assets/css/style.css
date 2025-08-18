@@ -198,6 +198,17 @@ max-height: 240px;
     text-decoration: none;
 }
 
+.btn-card-project{
+    background-color:#A8B5A2;
+    padding: 8px;
+    background-color: #A8B5A2;
+    color: #F4F1EB;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
 .soft-skills{
     margin-top: 32px;
     margin-bottom: 32px;
