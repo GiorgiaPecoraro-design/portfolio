@@ -1,1 +1,73 @@
 // header, hero, footer, grid
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: $color-bg;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  .logo {
+    float: left;
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $color-bg;
+    position: absolute;
+
+    a {
+      display: block;
+      padding: 20px;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+
+  &-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-area: 1 / 1;
+  }
+
+  &-text {
+    grid-area: 1 / 1;
+    z-index: 1;
+    padding: $padding-sm;
+    color: $color-light;
+    text-align: center;
+    max-width: 90%;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.footer {
+  background-color: $color-bg;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+  padding: 20px;
+  width: 100%;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
