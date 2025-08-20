@@ -1,6 +1,8 @@
-// reset e regole base
+@use "variables" as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+$font-family: 'Inter', sans-serif;
+$color-text: #1a1a1a;
+
 
 body {
   margin: 0;
@@ -12,5 +14,5 @@ body {
 
 a {
   color: $color-text;
-  text-decoration: none;
+  text-decoration: underline;
 }
