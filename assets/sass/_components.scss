@@ -16,8 +16,14 @@ button {
 }
 
 .card {
-  border:solid 1px;
+  border:solid 1.5px;
   border-color: $color-primary;
+  background-color: $color-bg;
+  transition: transform .3s ease;
+
+  &:hover{
+  transform: scale(1.05);
+  }
 }
 .card-img-top{
   width: 160px;
@@ -30,10 +36,8 @@ button {
   padding: $radius;
   border-radius: $radius;
   text-decoration: none;
-  // transition: transform .3s ease;
-   
+
   &:hover{
-  // transform: scale(1.05);
   background-color: $color-secondary;
   color: $color-text !important;
 }
