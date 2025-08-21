@@ -25,19 +25,17 @@ a:hover {
   color: transparent;
   border: none;
 }
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
+.offcanvas {
   background-color: #F4F1EB;
-  position: absolute;
 }
-.navbar ul a {
-  display: block;
-  padding: 20px;
+.offcanvas .nav-item :hover {
+  text-decoration: underline;
+  color: #243447;
 }
-.navbar ul a:hover {
-  background-color: #A8B5A2;
+.offcanvas .btn-close {
+  background-color: transparent;
+  border: none;
 }
 
 .hero {

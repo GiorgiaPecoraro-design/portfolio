@@ -10,24 +10,21 @@
     color: transparent;
     border: none;
   }
+  }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: $color-bg;
-    position: absolute;
+.offcanvas{
+  background-color: $color-bg;
 
-    a {
-      display: block;
-      padding: 20px;
-
-      &:hover {
-        background-color: $color-primary;
-      }
-    }
+   .nav-item :hover{
+    text-decoration: underline;
+    color: $color-dark;
+  }
+  .btn-close{
+    background-color: transparent;
+    border: none;
   }
 }
+
 
 .hero {
   display: grid;
