@@ -10,7 +10,8 @@ button {
   margin: $radius;
 
   &:hover {
-    background-color: $color-dark;
+    background-color: $color-secondary;
+    color: $color-text;
   }
 }
 
@@ -29,18 +30,18 @@ button {
   padding: $radius;
   border-radius: $radius;
   text-decoration: none;
+  // transition: transform .3s ease;
+   
+  &:hover{
+  // transform: scale(1.05);
+  background-color: $color-secondary;
+  color: $color-text !important;
+}
 }
 
 .nav-link{
   color: $color-text;
 }
-// .project-card {
-//   transition: transform .3s ease;
-
-//   &:hover {
-//     transform: scale(1.05);
-//   }
-// }
 
 form {
   margin: 0 auto;

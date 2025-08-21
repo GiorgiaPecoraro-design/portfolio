@@ -86,7 +86,8 @@ button {
   margin: 8px;
 }
 button:hover {
-  background-color: #243447;
+  background-color: #F1DDE4;
+  color: #1a1a1a;
 }
 
 .card {
@@ -105,6 +106,10 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   text-decoration: none;
+}
+.link-primary:hover {
+  background-color: #F1DDE4;
+  color: #1a1a1a !important;
 }
 
 .nav-link {
