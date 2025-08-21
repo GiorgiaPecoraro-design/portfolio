@@ -1,20 +1,14 @@
 // header, hero, footer, grid
 @use "variables" as *;
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.navbar{
   background-color: $color-bg;
   box-shadow: 1px 1px 4px rgba(0,0,0,.1);
-  position: fixed;
-  width: 100%;
-  z-index: 1;
 
-  .logo {
-    float: left;
-    font-size: 25px;
-    padding: 10px 20px;
+  .navbar-toggler{
+    background-color: $color-bg;
+    color: transparent;
+    border: none;
   }
 
   ul {
@@ -62,13 +56,16 @@
 
 .footer {
   background-color: $color-bg;
-  box-shadow: 1px 1px 4px rgba(0,0,0,.1);
-  padding: 20px;
-  width: 100%;
 
   &-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
+
+ .nav a:hover{
+  text-decoration: underline;
+  color: $color-text;
+
+ }
 }
