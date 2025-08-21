@@ -116,6 +116,9 @@ button:hover {
   background-color: #F1DDE4;
   color: #1a1a1a !important;
 }
+.link-primary:visited {
+  color: #1a1a1a !important;
+}
 
 .nav-link {
   color: #1a1a1a;

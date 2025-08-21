@@ -41,6 +41,10 @@ button {
   background-color: $color-secondary;
   color: $color-text !important;
 }
+
+  &:visited{
+    color: $color-text !important;
+  }
 }
 
 .nav-link{
