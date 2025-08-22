@@ -36,7 +36,7 @@ button {
   padding: $radius;
   border-radius: $radius;
   text-decoration: none;
-  text-decoration-color:$color-text;
+  
 
     &:hover{
   background-color: $color-secondary;
@@ -44,6 +44,7 @@ button {
 
    &:visited{
     color: initial;
+    text-decoration-color:$color-text !important;
   }
 
 

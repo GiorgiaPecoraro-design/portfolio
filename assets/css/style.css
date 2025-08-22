@@ -114,7 +114,6 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   text-decoration: none;
-  text-decoration-color: #1a1a1a;
 }
 .link-primary:hover {
   background-color: #F1DDE4;
@@ -122,6 +121,7 @@ button:hover {
 }
 .link-primary:visited {
   color: initial;
+  text-decoration-color: #1a1a1a !important;
 }
 
 .nav-link {
