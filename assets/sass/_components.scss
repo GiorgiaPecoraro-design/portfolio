@@ -36,15 +36,17 @@ button {
   padding: $radius;
   border-radius: $radius;
   text-decoration: none;
+  text-decoration-color:$color-text;
 
-  &:hover{
+    &:hover{
   background-color: $color-secondary;
-  color: $color-text !important;
-}
+  color: $color-text !important;}
 
-  &:visited{
-    color: $color-text !important;
+   &:visited{
+    color: initial;
   }
+
+
 }
 
 .nav-link{

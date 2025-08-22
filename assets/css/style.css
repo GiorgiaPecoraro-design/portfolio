@@ -15,6 +15,9 @@ a:hover {
   color: #1a1a1a;
   text-decoration: solid;
 }
+a:visited {
+  color: initial;
+}
 
 .navbar {
   background-color: #F4F1EB;
@@ -111,13 +114,14 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   text-decoration: none;
+  text-decoration-color: #1a1a1a;
 }
 .link-primary:hover {
   background-color: #F1DDE4;
   color: #1a1a1a !important;
 }
 .link-primary:visited {
-  color: #1a1a1a !important;
+  color: initial;
 }
 
 .nav-link {

@@ -20,4 +20,9 @@ a {
     color: $color-text;
     text-decoration: solid;
   }
+
+  &:visited{
+    color: initial;
+  }
+
 }
