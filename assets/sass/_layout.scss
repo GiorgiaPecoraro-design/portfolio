@@ -15,16 +15,16 @@
 .offcanvas{
   background-color: $color-bg;
 
-   .nav-item :hover{
+   .nav-item:hover{
     text-decoration: underline;
     color: $color-dark;
   }
+ 
   .btn-close{
     background-color: transparent;
     border: none;
   }
 }
-
 
 .hero {
   display: grid;
@@ -32,12 +32,16 @@
   height: 500px;
   overflow: hidden;
   position: relative;
+  background: linear-gradient(90deg, #F4F1EB 0%, #A8B5A2 100%);
+
+
 
   &-img {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
     grid-area: 1 / 1;
+    width:500px;
+    height:500px;
+    border-radius: $radius;
   }
 
   &-text {

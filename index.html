@@ -48,21 +48,51 @@
 </nav>
 
 <!-- SECTION HERO -->
-    <!-- da capire se è giusto con bootstrap -->
-<div class="container mt-3">
+    <!-- mobile
+<div class="container mt-3 d-block d-md-none">
 <section class="hero"> 
-   <img src="assets/img/zoom protrait.JPG" alt="Giorgia" class="hero-img"> 
+   <img src="assets/img/zoom protrait.JPG" alt="Giorgia" class="hero-img img-fluid"> 
    <div class="hero-text"> 
       <h1>Ciao,<br>sono Giorgia!</h1> 
       <span class="badge">UX/UI Designer</span> 
       <br> 
-      <button class="btn-hero"> Scoprimi </button> 
+      <a href="#about" class="link-primary">Scoprimi</a>
    </div> 
 </section>
-</div>
+</div> -->
+
+<!-- desktop -->
+<section class="container-fluid  my-5 py-5 hero">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Colonna testo -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="fw-bold">Ciao,<br>sono Giorgia!</h1>
+        <p class="text-muted"> UX/UI Designer. </p>
+          <a href="#about" class="link-primary">Scoprimi</a>
+      </div>
+
+      <!-- Colonna immagine -->
+      <div class="col-md-6 text-center">
+        <img src="assets/img/protrait-removebg-preview.png" 
+             alt="Giorgia" 
+             class="img-fluid"
+             style="max-height: 500px;">
+      </div>
+    </div>
+  </div>
+<svg class="position-absolute bottom-0 start-0 w-100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <path d="M0,0 C25,100 75,100 100,0 L100,100 L0,100 Z" fill="#F4F1EB"></path>
+</svg>
+</section>
+
+
+
+
 
 <!-- SECTION ABOUT -->
-<div class="container my-5">
+<div class="container my-5" id="about">
 <section class="about">
   <h2>Chi sono</h2>
   <p>Sono una <b>Junior UX/UI designer </b> che vede nel cambiamento un’occasione per crescere e reinventarsi.</p>

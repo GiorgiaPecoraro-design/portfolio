@@ -51,6 +51,25 @@ button {
   color: $color-text;
 }
 
+.dropdown-menu {
+  background-color: $color-bg;
+  border-color: $color-primary;
+}
+
+.dropdown-item {
+
+  .dropdown-item a:hover{
+   background-color: $color-bg;
+   text-decoration: underline;
+  }
+   .dropdown-item:active{
+   background-color: $color-bg;
+  }
+  .dropdown-item:focus{
+   background-color: $color-bg;
+  }
+  }
+
 form {
   margin: 0 auto;
   display: flex;

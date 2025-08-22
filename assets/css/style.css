@@ -29,7 +29,7 @@ a:hover {
 .offcanvas {
   background-color: #F4F1EB;
 }
-.offcanvas .nav-item :hover {
+.offcanvas .nav-item:hover {
   text-decoration: underline;
   color: #243447;
 }
@@ -44,12 +44,14 @@ a:hover {
   height: 500px;
   overflow: hidden;
   position: relative;
+  background: linear-gradient(90deg, #F4F1EB 0%, #A8B5A2 100%);
 }
 .hero-img {
-  height: 100%;
-  width: 100%;
   object-fit: cover;
   grid-area: 1/1;
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
 }
 .hero-text {
   grid-area: 1/1;
@@ -120,6 +122,22 @@ button:hover {
 
 .nav-link {
   color: #1a1a1a;
+}
+
+.dropdown-menu {
+  background-color: #F4F1EB;
+  border-color: #A8B5A2;
+}
+
+.dropdown-item .dropdown-item a:hover {
+  background-color: #F4F1EB;
+  text-decoration: underline;
+}
+.dropdown-item .dropdown-item:active {
+  background-color: #F4F1EB;
+}
+.dropdown-item .dropdown-item:focus {
+  background-color: #F4F1EB;
 }
 
 form {
