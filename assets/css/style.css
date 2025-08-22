@@ -164,4 +164,10 @@ form .btn-form {
   text-align: center;
 }
 
+.card-header {
+  border-bottom-color: #A8B5A2;
+  color: #243447;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
 /*# sourceMappingURL=style.css.map */
