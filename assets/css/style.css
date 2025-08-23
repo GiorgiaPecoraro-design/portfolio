@@ -11,12 +11,12 @@ a {
   color: #1a1a1a;
   text-decoration: none;
 }
+a:visited {
+  color: initial;
+}
 a:hover {
   color: #1a1a1a;
   text-decoration: solid;
-}
-a:visited {
-  color: initial;
 }
 
 .navbar {
@@ -131,17 +131,19 @@ button:hover {
 .dropdown-menu {
   background-color: #F4F1EB;
   border-color: #A8B5A2;
+  --bs-dropdown-link-active-bg: #A8B5A2;
 }
 
+.dropdown-item .dropdown-item a:visited {
+  background-color: #F4F1EB;
+  text-decoration-color: #1a1a1a;
+}
 .dropdown-item .dropdown-item a:hover {
   background-color: #F4F1EB;
-  text-decoration: underline;
+  text-decoration: solid;
 }
-.dropdown-item .dropdown-item:active {
-  background-color: #F4F1EB;
-}
-.dropdown-item .dropdown-item:focus {
-  background-color: #F4F1EB;
+.dropdown-item .dropdown-item a:active {
+  background-color: #A8B5A2;
 }
 
 form {

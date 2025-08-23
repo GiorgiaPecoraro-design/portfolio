@@ -57,21 +57,24 @@ button {
 .dropdown-menu {
   background-color: $color-bg;
   border-color: $color-primary;
+    --bs-dropdown-link-active-bg: #A8B5A2;
 }
+
 
 .dropdown-item {
 
-  .dropdown-item a:hover{
-   background-color: $color-bg;
-   text-decoration: underline;
-  }
-   .dropdown-item:active{
-   background-color: $color-bg;
-  }
-  .dropdown-item:focus{
-   background-color: $color-bg;
-  }
-  }
+.dropdown-item a:visited {
+ background-color: $color-bg;
+ text-decoration-color: $color-text;
+}
+ .dropdown-item a:hover {
+  background-color: $color-bg;
+   text-decoration: solid;
+} 
+  .dropdown-item a:active {
+  background-color: $color-primary;
+}
+}
 
 form {
   margin: 0 auto;

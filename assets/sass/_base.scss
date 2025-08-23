@@ -3,7 +3,6 @@
 $font-family: 'Inter', sans-serif;
 $color-text: #1a1a1a;
 
-
 body {
   margin: 0;
   padding: 0 20px;
@@ -16,13 +15,13 @@ a {
   color: $color-text;
   text-decoration: none;
 
+    &:visited{
+    color: initial;
+  }
+
   &:hover{
     color: $color-text;
     text-decoration: solid;
-  }
-
-  &:visited{
-    color: initial;
   }
 
 }
