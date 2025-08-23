@@ -134,6 +134,7 @@ button:hover {
   text-decoration: none;
 }
 .link-primary-secondary:hover {
+  background-color: #F1DDE4;
   text-decoration: underline;
 }
 .link-primary-secondary:visited {

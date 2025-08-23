@@ -58,6 +58,7 @@ button {
   text-decoration: none;
 
     &:hover{
+  background-color: $color-secondary;
   text-decoration: underline;
 }
 
