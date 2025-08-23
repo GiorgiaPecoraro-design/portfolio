@@ -46,8 +46,25 @@ button {
     color: initial;
     text-decoration-color:$color-text !important;
   }
+}
 
+.link-primary-secondary{
+  color: $color-text !important;
+  background-color: $color-bg;
+  border: solid;
+  border-color: $color-primary;
+  padding: $radius;
+  border-radius: $radius;
+  text-decoration: none;
 
+    &:hover{
+  text-decoration: underline;
+}
+
+   &:visited{
+    color: initial;
+    text-decoration-color:$color-text !important;
+  }
 }
 
 .nav-link{

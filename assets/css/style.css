@@ -124,6 +124,23 @@ button:hover {
   text-decoration-color: #1a1a1a !important;
 }
 
+.link-primary-secondary {
+  color: #1a1a1a !important;
+  background-color: #F4F1EB;
+  border: solid;
+  border-color: #A8B5A2;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.link-primary-secondary:hover {
+  text-decoration: underline;
+}
+.link-primary-secondary:visited {
+  color: initial;
+  text-decoration-color: #1a1a1a !important;
+}
+
 .nav-link {
   color: #1a1a1a;
 }
