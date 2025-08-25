@@ -115,6 +115,9 @@ button:hover {
   border-radius: 8px;
   text-decoration: none;
 }
+.link-primary:focus {
+  color: #1a1a1a !important;
+}
 .link-primary:hover {
   background-color: #F1DDE4;
   color: #1a1a1a !important;
@@ -150,18 +153,6 @@ button:hover {
   background-color: #F4F1EB;
   border-color: #A8B5A2;
   --bs-dropdown-link-active-bg: #A8B5A2;
-}
-
-.dropdown-item .dropdown-item a:visited {
-  background-color: #F4F1EB;
-  text-decoration-color: #1a1a1a;
-}
-.dropdown-item .dropdown-item a:hover {
-  background-color: #F4F1EB;
-  text-decoration: solid;
-}
-.dropdown-item .dropdown-item a:active {
-  background-color: #A8B5A2;
 }
 
 form {
