@@ -37,11 +37,13 @@ button {
   border-radius: $radius;
   text-decoration: none;
   
+   &:focus{
+  color: $color-text !important;
+ }
     &:hover{
   background-color: $color-secondary;
   color: $color-text !important;
 }
-
    &:visited{
     color: initial;
     text-decoration-color:$color-text !important;
@@ -79,20 +81,20 @@ button {
 }
 
 
-.dropdown-item {
+// .dropdown-item {
 
-.dropdown-item a:visited {
- background-color: $color-bg;
- text-decoration-color: $color-text;
-}
- .dropdown-item a:hover {
-  background-color: $color-bg;
-   text-decoration: solid;
-} 
-  .dropdown-item a:active {
-  background-color: $color-primary;
-}
-}
+// .dropdown-item a:visited {
+//  background-color: $color-bg;
+//  text-decoration-color: $color-text;
+// }
+//  .dropdown-item a:hover {
+//   background-color: $color-bg;
+//    text-decoration: solid;
+// } 
+//   .dropdown-item a:active {
+//   background-color: $color-primary;
+// }
+// }
 
 form {
   margin: 0 auto;
