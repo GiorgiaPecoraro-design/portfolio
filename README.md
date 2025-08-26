@@ -42,12 +42,9 @@ L’ispirazione del layout deriva da **Figma**, con particolare attenzione alla 
 ---
 
 ## 🚀 Come visualizzare il progetto in locale
-1. Clona la repository:
+1. Clona la repository
 
-2. Apri la cartella del progetto:
-
-   ```bash
-   cd portfolio
+2. Apri la cartella del progetto
 
 3. Apri `index.html` con il tuo browser preferito
 
