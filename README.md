@@ -43,15 +43,12 @@ L’ispirazione del layout deriva da **Figma**, con particolare attenzione alla 
 
 ## 🚀 Come visualizzare il progetto in locale
 1. Clona la repository:
-   ```bash
-   git clone https://github.com/giorgiapecoraro-design/portfolio.git
-````
 
 2. Apri la cartella del progetto:
 
    ```bash
    cd portfolio
-   ```
+
 3. Apri `index.html` con il tuo browser preferito
 
 ---
@@ -60,9 +57,9 @@ L’ispirazione del layout deriva da **Figma**, con particolare attenzione alla 
 
 Puoi contattarmi o seguirmi qui:
 
-* 🌐 [LinkedIn](https://www.linkedin.com/) ← inserisci qui il tuo link
+* 🌐 [LinkedIn](https://www.linkedin.com/in/giorgia-pecoraro/)
 * 💻 [GitHub](https://github.com/giorgiapecoraro-design)
-* ✉️ Email: [tuaemail@example.com](mailto:tuaemail@example.com) ← sostituisci con la tua email
+* ✉️ Email: [pecorarogiorgia.gp@gmail.com](mailto:pecorarogiorgia.gp@gmail.com)
 
 ---
 
