@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Vuoi collaborare con me? Contattami e raccontami il tuo progetto: sarò felice di ascoltarti e trovare soluzioni insieme.">
+    <meta name="robots" content="index, follow">
+
           <!-- Open Graph -->
   <meta property="og:title" content="Contattami -  Giorgia Pecoraro UX/UI Designer">
   <meta property="og:description" content="Prendiamo un caffè insieme e parliamo di una possibile collaborazione: scrivimi per creare insieme nuovi progetti di design.">
@@ -14,6 +17,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="icon" href="../assets/img/favicon.ico" type="favicon.ico">
     <link href="../assets/css/style.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+    <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      emailjs.init("_AxBndBINw89Yp8uy");
+
+      const form = document.getElementById('contact-form');
+      const toastEl = document.getElementById('liveToast');
+      const toastBody = document.getElementById('toast-body');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_5q1xp4c', 'template_5orxmqz', this)
+          .then(function() {
+            toastBody.textContent = "Messaggio inviato con successo!";
+            toastEl.classList.remove("bg-danger");
+            toastEl.classList.add("bg-success");
+
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+            form.reset();
+          }, function(error) {
+            toastBody.textContent = "Errore nell'invio del messaggio. Riprova più tardi.";
+            toastEl.classList.remove("bg-success");
+            toastEl.classList.add("bg-danger");
+
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+          });
+      });
+    });
+  </script>
   </head>
   <body>
 
@@ -161,43 +197,5 @@
 </nav>
 </footer>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Incluusione EmailJS -->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function(){
-      emailjs.init("_AxBndBINw89Yp8uy"); 
-  })();
-
-  const form = document.getElementById('contact-form');
-  const toastEl = document.getElementById('liveToast');
-  const toastBody = document.getElementById('toast-body');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // blocca l'invio standard
-
-    emailjs.sendForm('service_5q1xp4c', 'template_5orxmqz', this)
-      .then(function() {
-        toastBody.textContent = "Messaggio inviato con successo!";
-        toastEl.classList.remove("bg-danger");
-        toastEl.classList.add("bg-success");
-
-        const toast = new bootstrap.Toast(toastEl);
-        toast.show();
-
-        form.reset();
-      }, function(error) {
-        toastBody.textContent = "Errore nell'invio del messaggio. Riprova più tardi.";
-        toastEl.classList.remove("bg-success");
-        toastEl.classList.add("bg-danger");
-
-        const toast = new bootstrap.Toast(toastEl);
-        toast.show();
-      });
-  });
-</script>
-
-
 </body>
 </html>
